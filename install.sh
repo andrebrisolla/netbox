@@ -76,8 +76,26 @@ function configura_docker_compose() {
 
 }
 
+function build() {
+    
+    set_log "Iniciando o build"
+    docker-compose build 2>> $LOG_FILE >> $LOG_FILE
+    check_cmd $?
+
+}
+
+function start_containers() {
+    
+    set_log "Iniciando os containers"
+    docker-compose --env-file .env up -d 2>> $LOG_FILE >> $LOG_FILE
+    check_cmd $?
+    
+}
+
 install_docker
 config_docker
 start_docker
 install_docker_compose
 configura_docker_compose
+build
+start_containers
