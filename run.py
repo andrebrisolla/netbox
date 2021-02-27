@@ -146,5 +146,6 @@ def start_containers():
 install_docker()
 install_docker_compose()
 build()
+start_containers()
 
 
