@@ -62,7 +62,7 @@ def install_docker():
     
     # configura comando conforme distro
     if re.search('debian', id_like, re.IGNORECASE):
-        cmd = 'apt install docker -y'
+        cmd = 'curl https://get.docker.com | sh
         msg = 'Install Docker'
         
     elif re.search('rhel',id_like, re.IGNORECASE):
@@ -79,6 +79,7 @@ def install_docker():
         print("OK",flush=True)
     else:
         print("FAIL",flush=True)
+        sys.exit(1)
 
 
     # Iniciando docker
@@ -121,6 +122,18 @@ def build():
     
     cmd = 'docker-compose build'
     msg = 'Realizando o build das imagens...'
+    print("{} ".format(msg),end='',flush=True)
+    set_log('info','{}'.format(msg))
+    if run_cmd(cmd,msg):
+        print("OK",flush=True)
+    else:
+        print("FAIL",flush=True)
+
+""" Inicia os containers """
+def start_containers():
+    
+    cmd = 'docker-compose --env-file .env up -d'
+    msg = 'Iniciando containers... '
     print("{} ".format(msg),end='',flush=True)
     set_log('info','{}'.format(msg))
     if run_cmd(cmd,msg):
