@@ -34,6 +34,9 @@ def get_distro():
 """ Executa comando """
 def run_cmd(cmd,msg):
     
+    print("{} ".format(msg),end='',flush=True)
+    set_log('info','{}'.format(msg))
+    
     cmd_obj = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
     output = cmd_obj.communicate()[0].decode("utf-8")
     rc = cmd_obj.returncode
@@ -43,10 +46,10 @@ def run_cmd(cmd,msg):
 
     if rc != 0:
         set_log('error',output)
-        return False
+        print("OK",flush=True)
     else:
         set_log('success',msg)
-        return True
+        print("FAIL",flush=True)
 
 
 """ Install Docker """
