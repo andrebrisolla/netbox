@@ -79,7 +79,7 @@ function configura_docker_compose() {
 function build() {
     
     set_log "Iniciando o build"
-    docker-compose build 2>> $LOG_FILE >> $LOG_FILE
+    /usr/bin/docker-compose build 2>> $LOG_FILE >> $LOG_FILE
     check_cmd $?
 
 }
@@ -87,7 +87,7 @@ function build() {
 function start_containers() {
     
     set_log "Iniciando os containers"
-    docker-compose --env-file .env up -d 2>> $LOG_FILE >> $LOG_FILE
+    /usr/bin/docker-compose --env-file .env up -d 2>> $LOG_FILE >> $LOG_FILE
     check_cmd $?
     
 }

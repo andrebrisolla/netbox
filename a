@@ -1,3 +1,0 @@
-echo -ne "     bla... \r"
-sleep 1
-echo -ne "ok\n"
