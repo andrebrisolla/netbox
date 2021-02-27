@@ -61,7 +61,9 @@ function start_docker() {
 function install_docker_compose() {
 
     set_log "Instalando Docker Compose"
-    curl -s -L "https://github.com/docker/compose/releases/download/\1.28.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose | bash 2>> $LOG_FILE >> $LOG_FILE
+    curl -s -L "https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)" \
+        -o /usr/bin/docker-compose | \
+        bash 2>> $LOG_FILE >> $LOG_FILE
     check_cmd $?
 
 }
