@@ -52,7 +52,7 @@ function config_docker() {
 
 function start_docker() {
 
-    set_log "Configurando serviço do Docker"
+    set_log "Iniciando serviço do Docker"
     systemctl start docker | bash 2>> $LOG_FILE >> $LOG_FILE
     check_cmd $?
 
