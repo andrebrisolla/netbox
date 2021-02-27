@@ -1,24 +1,47 @@
 #!/bin/bash
 
+# Colors
+Color_Off='\033[0m'
+IRed='\033[0;91m'         # Red
+IGreen='\033[0;92m'       # Green
+IWhite='\033[0;97m'       # White
 
-check_cmd() {
+
+# configura log
+LOG_FILE="/tmp/netbox_install.log"
+
+function set_log() {
+
+    msg=$1
+    echo -ne "\t$msg\r"
+    date_time=$( date "+%d/%m/%Y, %H:%M:%S" )
+    echo "$date_time : $msg" >> $LOG_FILE
+
+}
+
+function check_cmd() {
 
     rc=$1
 
     if test $rc -eq 0
     then
-        echo "ok"
+        echo -ne $IGreen "ok $Color_Off\n"
     else
-        echo "nok"
+        echo -ne $IRed "fail $Color_Off\n"
+        echo -ne "\n\t"
+        exit
     fi
 
 }
 
-install_docker() {
+function install_docker() {
 
-    curl -s  https://get.docker.com | bash 2> /dev/null > /dev/null
+    set_log "Instalando Docker"    
+    curl -s  https://get.docker.com | bash 2>> $LOG_FILE >> $LOG_FILE
     check_cmd $?
 
 }
+
+
 
 install_docker
