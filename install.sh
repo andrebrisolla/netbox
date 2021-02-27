@@ -45,7 +45,7 @@ function install_docker() {
 function config_docker() {
 
     set_log "Configurando serviço do Docker"
-    systemctl enable docker | bash 2>> $LOG_FILE >> $LOG_FILE
+    systemctl enable docker  2>> $LOG_FILE >> $LOG_FILE
     check_cmd $?
 
 }
@@ -53,7 +53,7 @@ function config_docker() {
 function start_docker() {
 
     set_log "Iniciando serviço do Docker"
-    systemctl start docker | bash 2>> $LOG_FILE >> $LOG_FILE
+    systemctl start docker  2>> $LOG_FILE >> $LOG_FILE
     check_cmd $?
 
 }
