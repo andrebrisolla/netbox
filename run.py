@@ -66,7 +66,7 @@ def install_docker():
         msg = 'Install Docker'
         
     elif re.search('rhel',id_like, re.IGNORECASE):
-        cmd = 'yum install docker -y'
+        cmd = 'curl https://get.docker.com | sh'
         msg = 'Install Docker'
 
     else:
