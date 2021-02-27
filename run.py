@@ -62,7 +62,7 @@ def install_docker():
     
     # configura comando conforme distro
     if re.search('debian', id_like, re.IGNORECASE):
-        cmd = 'curl https://get.docker.com | sh
+        cmd = 'curl https://get.docker.com | sh'
         msg = 'Install Docker'
         
     elif re.search('rhel',id_like, re.IGNORECASE):
