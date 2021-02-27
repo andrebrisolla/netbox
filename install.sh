@@ -42,6 +42,22 @@ function install_docker() {
 
 }
 
+function config_docker() {
 
+    set_log "Configurando serviço do Docker"
+    systemctl enable docker
+    check_cmd $?
+
+}
+
+function start_docker() {
+
+    set_log "Configurando serviço do Docker"
+    systemctl start docker
+    check_cmd $?
+
+}
 
 install_docker
+config_docker
+start_docker
