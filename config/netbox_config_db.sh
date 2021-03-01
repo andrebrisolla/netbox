@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-psql -v ON_ERROR_STOP=1 --set PSWD=$POSTGRES_PASSWORD --username "$POSTGRES_USER"  <<-EOSQL
+psql -v ON_ERROR_STOP=1 --set PSWD=$NETBOX_PASSWORD --username "$POSTGRES_USER"  <<-EOSQL
     CREATE USER netbox WITH PASSWORD :'PSWD';
     CREATE DATABASE netbox;
     GRANT ALL PRIVILEGES ON DATABASE netbox TO netbox;
