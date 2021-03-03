@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Netbox Backup Manager</title>
+
+    <meta charset="utf-8">
+
+    <link href='css/bulma/css/bulma.css' rel="stylesheet">
+    <link href='css/breeze.css' rel="stylesheet">
+    <link href='css/fontawesome/css/all.css' rel="stylesheet">
+
+    <script src='js/jquery.js'></script>
+    <script src='js/breeze.js'></script>
+
+   
+
+</head>
+
+
+
+
+<body>
+    
+    <div class="login-box">
+        <div class="box">
+            <h5 class="subtitle is-5" style='text-align:center'>Netbox | Backup Manager</h5>
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="postgres" disabled>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input class="input" type="password" lgn-pswd placeholder="Password">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+            </div>
+            <button class="button is-link is-fullwidth" onclick='try_access()'>Entrar</button>
+            
+            <div class="notify" style=''></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

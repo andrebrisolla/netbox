@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Netbox Backup Manager</title>
+
+    <meta charset="utf-8">
+
+    <link href='css/bulma/css/bulma.css' rel="stylesheet">
+    <link href='css/breeze.css' rel="stylesheet">
+    <link href='css/fontawesome/css/all.css' rel="stylesheet">
+
+    <script src='js/jquery.js'></script>
+    <script async src='js/breeze.js'></script>
+
+   
+
+</head>
+
+
+
+
+<body>
+
+    <div class="carregando">
+        <progress style='width:100px' class="progress is-small is-link" max="100">15%</progress>
+    </div>
+
+    <div class="app">
+
+        
+        <h4 class="title is-4">Netbox Backup Manager<button class="button is-link" onclick='create_backup()'>Criar backup</button></h4>
+        
+        <div class="notify" style='margin-bottom:30px;'></div>
+
+          
+
+        <div>
+            <table id='dump-list' class='table is-fullwidth is-striped' style='display:none'>
+                <thead>
+                    <tr>
+                        <th>Data do backup</th>
+                        <th>Arquivo</th>
+                        <th>Tamanho</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

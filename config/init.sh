@@ -25,7 +25,7 @@ python3 /opt/netbox/netbox/create_superuser.py
 # Adiciona os arquivos estáticos 
 python3 /opt/netbox/netbox/manage.py collectstatic --noinput
 
-# Update Netbox
+# Upgrade
 /opt/netbox/upgrade.sh
 
 # Inicia o serviço

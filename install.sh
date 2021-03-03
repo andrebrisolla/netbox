@@ -1,15 +1,17 @@
 #!/bin/bash
+# Autor: André Müzel Brisolla
+# Data: Mar 03, 2021
+# Objetivo: Realizar um deploy do Netbox num ambiente containerizado.
+# Prereqs: git
 
 # Colors
-Color_Off='\033[0m'
+Color_Off='\033[0m'       # Off
 IRed='\033[0;91m'         # Red
 IGreen='\033[0;92m'       # Green
 IWhite='\033[0;97m'       # White
 
-
-# configura log
+# Configura log
 LOG_FILE="/tmp/netbox_install.log"
-
 function set_log() {
 
     msg=$1
@@ -19,6 +21,7 @@ function set_log() {
 
 }
 
+# Verifica execução do comando
 function check_cmd() {
 
     rc=$1
@@ -34,6 +37,7 @@ function check_cmd() {
 
 }
 
+# Instala o Docker
 function install_docker() {
 
     set_log "Instalando Docker"    
@@ -42,6 +46,7 @@ function install_docker() {
 
 }
 
+# Habilita o serviço do Docker
 function config_docker() {
 
     set_log "Configurando serviço do Docker"
@@ -50,6 +55,7 @@ function config_docker() {
 
 }
 
+# Inicia o Docker
 function start_docker() {
 
     set_log "Iniciando serviço do Docker"
@@ -58,6 +64,7 @@ function start_docker() {
 
 }
 
+# Instala o Docker Compose
 function install_docker_compose() {
 
     set_log "Instalando Docker Compose"
@@ -68,6 +75,7 @@ function install_docker_compose() {
 
 }
 
+# Configura permissões do Docker Compose
 function configura_docker_compose() {
 
     set_log "Configurando Docker Compose"
@@ -76,6 +84,7 @@ function configura_docker_compose() {
 
 }
 
+# Realiza o build das imagens
 function build() {
     
     set_log "Iniciando o build"
@@ -84,12 +93,37 @@ function build() {
 
 }
 
+# Inicia os containers
 function start_containers() {
     
     set_log "Iniciando os containers"
     /usr/bin/docker-compose --env-file .env up -d 2>> $LOG_FILE >> $LOG_FILE
     check_cmd $?
     
+}
+
+# Exibe uma mensagem ao final da instalação
+function message() {
+
+    IP=($( hostname -i | sed 's/ /\n/g' | grep -v ^127  ))
+
+    echo -ne "\n$IGreen Instalação do Netbox concluida com sucesso!\n $Color_Off"
+    echo -ne "\n Acesso Netbox:\n"
+    for a in ${IP[@]}
+    do
+        echo -ne "   - http://$a/\n"
+    done
+
+    echo -ne "\n Acesso ao painel de Backup do Banco de Dados:\n"
+    for a in ${IP[@]}
+    do
+        echo -ne "   - http://$a/backup_webapp/\n"
+    done
+
+    echo -ne "\n Dados de acesso:"
+    echo -ne "\n   - Netbox: $IRed admin/admin $Color_Off"
+    echo -ne "\n   - Painel de Backup: $IRed postgres/`cat .env | grep POSTGRES_PASSWORD | awk -F= '{print $2}'`  $Color_Off\n\n\n"
+
 }
 
 install_docker
@@ -99,3 +133,4 @@ install_docker_compose
 configura_docker_compose
 build
 start_containers
+message
