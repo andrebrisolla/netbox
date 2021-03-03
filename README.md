@@ -1,16 +1,16 @@
 <h1 align="center">Netbox</h1>
 
 <div align="center">
-  Repositório criado para simplificar a instalação do <a target='_blank' href='https://netbox.readthedocs.io/en/stable/'>Netbox</a>.
+  Repositório criado para simplificar a instalação do <a href='https://netbox.readthedocs.io/en/stable/'>Netbox</a>.
 </div>
 
 <br />
 
 <div align="center">
   <!-- Stability -->
-  <a href="https://nodejs.org/api/documentation.html#documentation_stability_index">
-    <img src="https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square"
-      alt="API stability" />
+  <a href="https://www.gnu.org/software/bash/">
+    <img src="https://img.shields.io/badge/stability-experimental-orange.svg"
+      alt="BASH" />
   </a>
   <!-- NPM version -->
   <a href="https://npmjs.org/package/choo">
