@@ -72,7 +72,7 @@ services:
       - netbox_network
     volumes:
       - ./backup_app:/app
-      - /var/lib/postgresql/data/dumps:/pg_dumps
+      - /var/lib/postgresql/dumps:/pg_dumps
     depends_on:
       - "db"
 
