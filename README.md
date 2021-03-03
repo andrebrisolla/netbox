@@ -9,7 +9,7 @@
 <div align="center">
   <!-- Stability -->
   <a href="https://www.gnu.org/software/bash/">
-    <img src="https://img.shields.io/badge/stability-experimental-orange.svg"
+    <img src="https://img.shields.io/badge/bash-orange.svg"
       alt="BASH" />
   </a>
   <!-- NPM version -->
