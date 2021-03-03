@@ -1,13 +1,7 @@
 <h1 align="center">Netbox</h1>
 
 <div align="center">
-  :steam_locomotive::train::train::train::train::train:
-</div>
-<div align="center">
-  <strong>Fun functional programming</strong>
-</div>
-<div align="center">
-  A <code>4kb</code> framework for creating sturdy frontend applications
+  Repositório criado para simplificar a instalação do <a href='https://netbox.readthedocs.io/en/stable/'>Netbox</a>.
 </div>
 
 <br />
