@@ -9,6 +9,8 @@
   <a href="mailto:andremuzel@gmail.com">André Müzel brisolla</a>
 </div>
 
+</br>
+
 ## Sobre o Netbox
 O Netbox é uma aplicação web de código aberto criado para ajudar na gestão e na documentação de redes de computadores. Itens que o Netbox pode gerenciar:
 
@@ -60,7 +62,7 @@ mkdir /var/lib/postgresql{dumps,data}
 ## Instalação
 Clonar o repositório de instalação do Netbox
 ```bash
-git clone https://github.com/andrebrisolla/netbox
+git clone https://github.com/andrebrisolla/netbox.git
 cd netbox
 ```
 Alterar a senha do Postgres e do Netbox no arquivo .env
