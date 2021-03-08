@@ -18,10 +18,14 @@ O Netbox é uma aplicação web de código aberto criado para ajudar na gestão 
 - __Connections:__  Rede, console, conexões entre os dispositivos
 - __Virtualização:__ Clusters e Maquinas Virtuais
 - __Data circuits:__ Long-haul communications circuits and providers
-- __Senhas:__  Armazenamento criptografado de credenciais confidenciais
+- __Senhas:__  Armazenamento criptografado de credenciais
+
+## Pré-requisitos
+```bash ls ```
 
 
-## Table of Contents
+
+
 - [Features](#features)
 - [Example](#example)
 - [Philosophy](#philosophy)
