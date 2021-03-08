@@ -20,6 +20,8 @@ O Netbox é uma aplicação web de código aberto criado para ajudar na gestão 
 - __Data circuits:__ Long-haul communications circuits and providers
 - __Senhas:__  Armazenamento criptografado de credenciais
 
+</br>
+
 ## Pré-requisitos
 #### Acessos
 Conexão com a internet para baixar os dados necessários para realizar a contrução das imagens dos containers.
