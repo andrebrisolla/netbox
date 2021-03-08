@@ -69,11 +69,6 @@ POSTGRES_PASSWORD=password
 NETBOX_PASSWORD=password
 ```
 
-
-
-## Acesso a aplicação
-http://[IP]/
-
 Instalação completa ( Contempla instalação do Docker e Docker Compose )
 ```bash
 ./install.sh --all
@@ -83,7 +78,14 @@ Realiza o build da imagem e inicia os containers ( Não contempla instalação d
 ./install.sh --build
 ```
 
+</br>
 
+## Acesso a aplicação
+http://[IP]/
+
+</br>
+## Painel de Backup do Netbox
+O Painel de Backup do Netbox foi desenvolvido gerenciar o backup da base de dados do Netbox. Nele você pode realizar um backup, remover um backup e restaurar um backup. O endereço para acessar é painel é `http://[IP]/backup_webapp/`
 
 - [Features](#features)
 - [Example](#example)
