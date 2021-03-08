@@ -4,9 +4,6 @@
   Repositório criado para simplificar a instalação e configuração do <a href='https://netbox.readthedocs.io/en/stable/'>Netbox</a>.
 </div>
 
-<br />
-
-
 <div align="center">
   <sub>Desenvolvido por
   <a href="mailto:andremuzel@gmail.com">André Müzel brisolla</a>
