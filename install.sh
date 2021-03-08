@@ -120,9 +120,10 @@ function message() {
         echo -ne "   - http://$a/backup_webapp/\n"
     done
 
+    source .env
     echo -ne "\n Dados de acesso:"
     echo -ne "\n   - Netbox: $IRed admin/${NETBOX_PASSWORD} $Color_Off"
-    echo -ne "\n   - Painel de Backup: $IRed postgres/`cat .env | grep POSTGRES_PASSWORD | awk -F= '{print $2}'`  $Color_Off\n\n\n"
+    echo -ne "\n   - Painel de Backup: $IRed postgres/${POSTGRES_PASSWORD}  $Color_Off\n\n\n"
 
 }
 
