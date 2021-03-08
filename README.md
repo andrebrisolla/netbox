@@ -22,11 +22,11 @@ O Netbox é uma aplicação web de código aberto criado para ajudar na gestão 
 
 ## Pré-requisitos
 Centos:
-```bash 
+```shell 
 yum install git -y
 ```
 Ubuntu/Debian:
-```bash 
+```shell 
 apt install git -y
 ```
 
