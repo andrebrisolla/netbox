@@ -86,7 +86,9 @@ O acesso a aplicação é realizado via porta 80, por exemplo: `http://192.168.0
 </br>
 
 ## Painel de Backup do Netbox
-O Painel de Backup do Netbox foi desenvolvido gerenciar o backup da base de dados do Netbox. Nele você pode realizar, remover e restaurar um backup. O endereço para acessar é painel é `http://[IP]/backup_webapp/`
+O Painel de Backup do Netbox foi desenvolvido gerenciar o backup da base de dados do Netbox. Nele você pode realizar, remover e restaurar um backup. O endereço para acessar o painel é `http://[IP]/backup_webapp/`
+
+<img src='img/backup_webapp.png'>
 
 - [Features](#features)
 - [Example](#example)
