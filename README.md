@@ -21,7 +21,7 @@ O Netbox é uma aplicação web de código aberto criado para ajudar na gestão 
 - __Senhas:__  Armazenamento criptografado de credenciais
 
 ## Pré-requisitos
-# Pacotes
+#### Pacotes
 Centos:
 ```bash 
 yum install git -y
