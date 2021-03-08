@@ -121,7 +121,7 @@ function message() {
     done
 
     echo -ne "\n Dados de acesso:"
-    echo -ne "\n   - Netbox: $IRed admin/admin $Color_Off"
+    echo -ne "\n   - Netbox: $IRed admin/${NETBOX_PASSWORD} $Color_Off"
     echo -ne "\n   - Painel de Backup: $IRed postgres/`cat .env | grep POSTGRES_PASSWORD | awk -F= '{print $2}'`  $Color_Off\n\n\n"
 
 }

@@ -7,15 +7,15 @@
 <br />
 
 <div align="center">
-  <!-- Stability -->
-  <a href="https://www.gnu.org/software/bash/">
-    <img src="https://img.shields.io/badge/PostgreSQL-9.6-blue.svg"
-      alt="BASH" />
-  </a>
-  <!-- NPM version -->
+  <!-- Netbox -->
   <a href="https://npmjs.org/package/choo">
     <img src="https://img.shields.io/npm/v/choo.svg?style=flat-square"
       alt="NPM version" />
+  </a>
+  <!-- PostgreSQL -->
+  <a href="https://www.postgresql.org/">
+    <img src="https://img.shields.io/badge/PostgreSQL-9.6-blue.svg"
+      alt="PostgreSQL 9.6" />
   </a>
   <!-- Build Status -->
   <a href="https://travis-ci.org/choojs/choo">
