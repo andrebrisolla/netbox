@@ -13,10 +13,10 @@
 
 
 - [Sobre o Netbox](#Sobre-o-Netbox)
-- [Example](#example)
-- [Philosophy](#philosophy)
-- [Events](#events)
-- [State](#state)
+- [Pré-requisitos](#Pré-requisitos)
+- [Instalação](#Instalação)
+- [Acesso a aplicação](#Acesso-a-aplicação)
+- [Painel de Backup do Netbox](#Painel-de-Backup-do-Netbox)
 - [Routing](#routing)
 - [Server Rendering](#server-rendering)
 - [Components](#components)
