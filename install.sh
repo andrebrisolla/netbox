@@ -127,11 +127,29 @@ function message() {
 
 }
 
-install_docker
-config_docker
-start_docker
-install_docker_compose
-configura_docker_compose
-build
-start_containers
-message
+function help() {
+    echo -ne "\n  install.sh - Instalador do Netbox\n\n"
+    echo -ne "\t--all  : Instalao Docker, Docker Compose, \n\t         realiza o build das imagens e inicia os containers.\n\n"
+    echo -ne "\t--build : Realiza o build das imagens e inicia os containers.\n\n\n"
+}
+
+case $1 in
+    --all)
+        install_docker
+        config_docker
+        start_docker
+        install_docker_compose
+        configura_docker_compose
+        build
+        start_containers
+        message
+    ;;
+    --build)
+        build
+        start_containers
+        message
+    ;;
+    *)
+        help
+    ;;
+esac

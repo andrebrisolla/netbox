@@ -63,6 +63,14 @@ Clonar o repositório de instalação do Netbox
 git clone https://github.com/andrebrisolla/netbox
 cd netbox
 ```
+Alterar a senha do Postgres e do Netbox no arquivo .env
+```
+POSTGRES_PASSWORD=password
+NETBOX_PASSWORD=password
+```
+
+
+
 Instalação completa ( Contempla instalação do Docker e Docker Compose )
 ```bash
 ./install.sh --all
