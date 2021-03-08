@@ -19,6 +19,8 @@
 - [Painel de Backup do Netbox](#Painel-de-Backup-do-Netbox)
 - [Arquitetura do ambiente](#Arquitetura-do-Ambiente)
 
+</br>
+
 ## Sobre o Netbox
 O Netbox é uma aplicação web de código aberto criado para ajudar na gestão e na documentação de redes de computadores. Itens que o Netbox pode gerenciar:
 
