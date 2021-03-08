@@ -8,8 +8,8 @@
 
 <div align="center">
   <!-- Netbox -->
-  <a href="https://npmjs.org/package/choo">
-    <img src="https://img.shields.io/npm/v/choo.svg?style=flat-square"
+  <a href="https://netbox.readthedocs.io/en/stable/">
+    <img src="https://img.shields.io/badge/Netbox-2.10-blue.svg"
       alt="NPM version" />
   </a>
   <!-- PostgreSQL -->
