@@ -31,6 +31,14 @@ Ubuntu/Debian:
 apt install git -y
 ```
 
+#### Armazenamento
+File System /var/lib/postgresql com 20GB
+
+#### Estrutura de diretórios
+```bash
+mkdir /var/lib/postgresql{dumps,data}
+```
+
 
 
 
