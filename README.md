@@ -1,43 +1,10 @@
 <h1 align="center">Netbox</h1>
 
 <div align="center">
-  Repositório criado para simplificar a instalação do <a href='https://netbox.readthedocs.io/en/stable/'>Netbox</a>.
+  Repositório criado para simplificar a instalação e configuração do <a href='https://netbox.readthedocs.io/en/stable/'>Netbox</a>.
 </div>
 
 <br />
-
-<div align="center">
-  <!-- Netbox -->
-  <a href="https://netbox.readthedocs.io/en/stable/">
-    <img src="https://img.shields.io/badge/Netbox-2.10-blue.svg"
-      alt="NPM version" />
-  </a>
-  <!-- PostgreSQL -->
-  <a href="https://www.postgresql.org/">
-    <img src="https://img.shields.io/badge/PostgreSQL-9.6-blue.svg"
-      alt="PostgreSQL 9.6" />
-  </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/choojs/choo">
-    <img src="https://img.shields.io/travis/choojs/choo/master.svg?style=flat-square"
-      alt="Build Status" />
-  </a>
-  <!-- Test Coverage -->
-  <a href="https://codecov.io/github/choojs/choo">
-    <img src="https://img.shields.io/codecov/c/github/choojs/choo/master.svg?style=flat-square"
-      alt="Test Coverage" />
-  </a>
-  <!-- Downloads -->
-  <a href="https://npmjs.org/package/choo">
-    <img src="https://img.shields.io/npm/dt/choo.svg?style=flat-square"
-      alt="Download" />
-  </a>
-  <!-- Standard -->
-  <a href="https://standardjs.com">
-    <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"
-      alt="Standard" />
-  </a>
-</div>
 
 <div align="center">
   <h3>
