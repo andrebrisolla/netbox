@@ -14,11 +14,11 @@ O Netbox é uma aplicação web de código aberto criado para ajudar na gestão 
 
 - __Gestão de endereços de IP (IPAM):__ Endereços de IP, VRFs, e VLANs
 - __Equipamentos (racks):__ Organizado por grupo e site
-Devices - Types of devices and where they are installed
-Connections - Network, console, and power connections among devices
-Virtualization - Virtual machines and clusters
-Data circuits - Long-haul communications circuits and providers
-Secrets - Encrypted storage of sensitive credentials
+- __Dispositivos:__ Tipos de dispositivos e onde estão instalados
+- __Connections:__  Rede, console, conexões entre os dispositivos
+- __Virtualização:__ Clusters e Maquinas Virtuais
+- __Data circuits:__ Long-haul communications circuits and providers
+- __Senhas:__  Armazenamento criptografado de credenciais confidenciais
 
 
 ## Table of Contents
