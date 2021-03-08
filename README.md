@@ -6,7 +6,7 @@
 
 <div align="center">
   <sub>Desenvolvido por
-  <a href="mailto:andremuzel@gmail.com">André Müzel brisolla</a>
+  <a href="mailto:andremuzel@gmail.com">André Müzel Brisolla</a>
 </div>
 
 </br>
@@ -33,7 +33,7 @@ O Netbox é uma aplicação web de código aberto criado para ajudar na gestão 
 - __Gestão de endereços de IP (IPAM):__ Endereços de IP, VRFs, e VLANs
 - __Equipamentos (racks):__ Organizado por grupo e site
 - __Dispositivos:__ Tipos de dispositivos e onde estão instalados
-- __Connections:__  Rede, console, conexões entre os dispositivos
+- __Conexões:__  Rede, console, conexões entre os dispositivos
 - __Virtualização:__ Clusters e Maquinas Virtuais
 - __Data circuits:__ Long-haul communications circuits and providers
 - __Senhas:__  Armazenamento criptografado de credenciais
