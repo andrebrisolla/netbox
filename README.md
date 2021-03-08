@@ -33,10 +33,16 @@ Ubuntu/Debian:
 ```bash 
 apt install git -y
 ```
-#### Docker *instalação realizada automaticamente no script de instalação
+#### Docker 
+* O script de instalação contempla a instalação e configuração do Docker
+```bash
+curl -s https://get.docker.com | sh
 ```
-bash
-
+#### Docker Compose
+* O script de instalação contempla a instalação e configuração do Docker Compose
+```bash
+curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 #### Armazenamento
