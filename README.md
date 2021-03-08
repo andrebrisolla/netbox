@@ -94,7 +94,7 @@ Realiza o build da imagem e inicia os containers ( Não contempla instalação d
 </br>
 
 ## Acesso a aplicação
-O acesso a aplicação é realizado via porta 80, por exemplo: `http://192.168.0.1/`
+O acesso a aplicação é realizado pela porta 80, por exemplo: `http://192.168.0.1/`
 
 </br>
 
