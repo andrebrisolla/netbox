@@ -53,7 +53,7 @@ File System /var/lib/postgresql com 20GB
 mkdir /var/lib/postgresql{dumps,data}
 ```
 
-
+</br>
 ## Instalação
 Clonar o repositório de instalação do Netbox
 ```bash
