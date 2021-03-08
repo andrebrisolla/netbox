@@ -104,7 +104,7 @@ O Painel de Backup do Netbox foi desenvolvido gerenciar o backup da base de dado
 </br>
 
 ## Arquitetura do ambiente
-<img src='img/arquitetura.png'>
+<img src='img/arquitetura.jpg'>
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
