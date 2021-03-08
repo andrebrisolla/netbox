@@ -33,7 +33,7 @@ Ubuntu/Debian:
 ```bash 
 apt install git -y
 ```
-#### Docker
+#### Docker *instalação realizada automaticamente no script de instalação
 ```
 bash
 
