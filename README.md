@@ -12,7 +12,14 @@
 ## Sobre o Netbox
 O Netbox é uma aplicação web de código aberto criado para ajudar na gestão e na documentação de redes de computadores. Itens que o Netbox pode gerenciar:
 
-- __Gestão de endereços de IP (IPAM):__ weighing `4kb`, Choo is a tiny little framework
+- __Gestão de endereços de IP (IPAM):__ Endereços de IP, VRFs, e VLANs
+- __Equipamentos (racks):__ Organizado por grupo e site
+Devices - Types of devices and where they are installed
+Connections - Network, console, and power connections among devices
+Virtualization - Virtual machines and clusters
+Data circuits - Long-haul communications circuits and providers
+Secrets - Encrypted storage of sensitive credentials
+
 
 ## Table of Contents
 - [Features](#features)
