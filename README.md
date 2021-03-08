@@ -84,6 +84,7 @@ Realiza o build da imagem e inicia os containers ( Não contempla instalação d
 http://[IP]/
 
 </br>
+
 ## Painel de Backup do Netbox
 O Painel de Backup do Netbox foi desenvolvido gerenciar o backup da base de dados do Netbox. Nele você pode realizar um backup, remover um backup e restaurar um backup. O endereço para acessar é painel é `http://[IP]/backup_webapp/`
 
