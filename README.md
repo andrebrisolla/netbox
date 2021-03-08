@@ -9,6 +9,9 @@
   <a href="mailto:andremuzel@gmail.com">André Müzel brisolla</a>
 </div>
 
+## Sobre o Netbox
+O Netbox é uma aplicação web de código aberto criado para ajudar na gestão e na documentação de redes de computadores.
+
 ## Table of Contents
 - [Features](#features)
 - [Example](#example)
