@@ -62,6 +62,7 @@ mkdir /var/lib/postgresql{dumps,data}
 ## Instalação
 Clonar o repositório de instalação do Netbox
 ```bash
+cd /srv/
 git clone https://github.com/andrebrisolla/netbox.git
 cd netbox
 ```
