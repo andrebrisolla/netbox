@@ -54,6 +54,21 @@ mkdir /var/lib/postgresql{dumps,data}
 ```
 
 
+## Instalação
+Clonar o repositório de instalação do Netbox
+```bash
+git clone https://github.com/andrebrisolla/netbox
+cd netbox
+```
+Instalação completa ( Contempla instalação do Docker e Docker Compose )
+```bash
+./install.sh --all
+```
+Realiza o build da imagem e inicia os containers ( Não contempla instalação do Docker e Docker Compose )
+```bash
+./install.sh --build
+```
+
 
 
 - [Features](#features)
